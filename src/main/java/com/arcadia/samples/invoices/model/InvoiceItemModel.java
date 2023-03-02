@@ -18,13 +18,13 @@ public class InvoiceItemModel {
     }
     
     @Id
-    @Column(name = "id")
+    @Column(name = "id", nullable=false)
     private int id;
     
-    @Column(name = "id_factura")
+    @Column(name = "id_factura", nullable=false)
     private int id_factura;
     
-    @Column(name = "id_producto")
+    @Column(name = "id_producto", nullable=false)
     private int id_producto;
     
     @Column(name = "cantidad")
@@ -37,7 +37,7 @@ public class InvoiceItemModel {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(final int id) {
         this.id = id;
     }
 
@@ -45,7 +45,7 @@ public class InvoiceItemModel {
         return id_factura;
     }
 
-    public void setId_factura(int id_factura) {
+    public void setId_factura(final int id_factura) {
         this.id_factura = id_factura;
     }
 
@@ -53,7 +53,7 @@ public class InvoiceItemModel {
         return id_producto;
     }
 
-    public void setId_producto(int id_producto) {
+    public void setId_producto(final int id_producto) {
         this.id_producto = id_producto;
     }
 
@@ -61,7 +61,7 @@ public class InvoiceItemModel {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(final int cantidad) {
         this.cantidad = cantidad;
     }
 
@@ -69,7 +69,7 @@ public class InvoiceItemModel {
         return precio;
     }
 
-    public void setPrecio(int precio) {
+    public void setPrecio(final int precio) {
         this.precio = precio;
     }   
 }

@@ -1,13 +1,13 @@
-package com.arcadia.samples.springfacturas;
+package com.arcadia.samples.invoices;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringFacturasApplication {
+public class App {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringFacturasApplication.class, args);
+		SpringApplication.run(App.class, args);
 	}
 
 }

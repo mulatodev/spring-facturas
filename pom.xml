@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.arcadia.samples</groupId>
-	<artifactId>spring-facturas</artifactId>
+	<artifactId>spring-invoices</artifactId>
 	<version>0.0.1</version>
-	<name>spring-facturas</name>
+	<name>spring-invoices</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

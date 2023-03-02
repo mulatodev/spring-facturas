@@ -1,10 +1,10 @@
-package com.arcadia.samples.springfacturas;
+package com.arcadia.samples.invoices;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringFacturasApplicationTests {
+class AppTests {
 
 	@Test
 	void contextLoads() {

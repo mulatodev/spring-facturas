@@ -11,9 +11,9 @@ import jakarta.persistence.Id;
  */
 @Entity
 @Table(name = "detalle")
-public class InvoiceItemModel {
+public class BillItemModel {
 
-    public InvoiceItemModel(){
+    public BillItemModel(){
         
     }
     

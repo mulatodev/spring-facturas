@@ -12,7 +12,7 @@ import jakarta.persistence.JoinColumn;
 import java.util.HashSet;
 import java.util.Set;
 
-//import com.arcadia.samples.invoices.model.InvoiceModel;
+//import com.arcadia.samples.invoices.model.BillModel;
 
 /**
  *
@@ -38,7 +38,7 @@ public class CustomerModel {
     
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "id_cliente", referencedColumnName = "id")
-    private Set<InvoiceModel> invoice = new HashSet<>();
+    private Set<BillModel> invoice = new HashSet<>();
 
     public int getId() {
         return id;
@@ -64,11 +64,11 @@ public class CustomerModel {
         this.email = email;
     }
     
-    public Set<InvoiceModel> getInvoice() {
+    public Set<BillModel> getInvoice() {
         return invoice;
     }
 
-    public void setInvoice(final Set<InvoiceModel> invoice) {
+    public void setInvoice(final Set<BillModel> invoice) {
         this.invoice = invoice;
     }    
 }

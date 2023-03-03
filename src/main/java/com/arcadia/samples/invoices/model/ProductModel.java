@@ -38,7 +38,7 @@ public class ProductModel {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "id_producto", referencedColumnName = "id")
-    private Set<InvoiceItemModel> invoiceItem = new HashSet<>();
+    private Set<BillItemModel> invoiceItem = new HashSet<>();
     
     public int getId() {
         return Id;
@@ -72,11 +72,11 @@ public class ProductModel {
         this.stock = stock;
     }
 
-    public Set<InvoiceItemModel> getInvoiceItem() {
+    public Set<BillItemModel> getInvoiceItem() {
         return invoiceItem;
     }
 
-    public void setInvoiceItem(final Set<InvoiceItemModel> invoiceItem) {
+    public void setInvoiceItem(final Set<BillItemModel> invoiceItem) {
         this.invoiceItem = invoiceItem;
     }
 }

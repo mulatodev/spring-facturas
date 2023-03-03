@@ -18,9 +18,9 @@ import java.util.Set;
  */
 @Entity
 @Table(name = "factura")
-public class InvoiceModel {
+public class BillModel {
 
-    public InvoiceModel(){
+    public BillModel(){
         
     }
     
@@ -36,7 +36,7 @@ public class InvoiceModel {
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     @JoinColumn(name = "id_factura", referencedColumnName = "id")
-    private Set<InvoiceItemModel> invoice = new HashSet<>();
+    private Set<BillItemModel> invoice = new HashSet<>();
     
     public int getId() {
         return id;
@@ -62,11 +62,11 @@ public class InvoiceModel {
         this.fecha = fecha;
     }
 
-    public Set<InvoiceItemModel> getInvoice() {
+    public Set<BillItemModel> getInvoice() {
         return invoice;
     }
 
-    public void setInvoice(final Set<InvoiceItemModel> invoice) {
+    public void setInvoice(final Set<BillItemModel> invoice) {
         this.invoice = invoice;
     }
 }

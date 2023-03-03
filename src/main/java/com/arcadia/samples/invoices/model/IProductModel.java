@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  *
  * @author ganaranjo
  */
-public interface InvoiceInterface extends JpaRepository<InvoiceModel, Long>{
+public interface IProductModel extends JpaRepository<ProductModel, Long>{
     
 }
